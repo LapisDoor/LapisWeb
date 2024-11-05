@@ -3,6 +3,7 @@
     <head>
         <title>Lapis Blog - Home</title>
         <meta charset="utf-8">
+        <link rel="icon" href="favicon.ico">
         <link rel="stylesheet" type="text/css" href="style.css">
         <link rel="canonical" href="https://lapis.f5.si" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -19,16 +20,34 @@
         <!-- <meta property="fb:app_id" content="AppID"> -->
     </head>
     <body>
-        <nav>
-            <div class="logo">
-                <p>Lapis Blog</p>
+        <header>
+            <div class="logo">Lapis Blog</div>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
             </div>
-            <ul>
-                <li><a href="index.html" class="active">ホーム</a></li>
-            </ul>
-        </nav>
-        <p>
-            2024 LapisDoor
-        </p>
+            <nav class="nav-bar">
+                <ul>
+                    <li>
+                        <a href="" class="active">ホーム</a>
+                    </li>
+                    <li>
+                        <a href="">情報</a>
+                    </li>
+                    <li>
+                        <a href="">問い合わせ</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <script>
+            hamburger = document.querySelector(".hamburger");
+            hamburger.onclick = function() {
+                navBar = document.querySelector(".nav-bar");
+                navBar.classList.toggle("active");
+            }
+        </script>
     </body>
 </html>
