@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <title>Lapis Blog - About</title>
+        <meta charset="utf-8">
+        <link rel="icon" href="favicon.ico">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="canonical" href="https://lapis.f5.si" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <meta name="description" content="Lapis Blogの情報等が載っています。" />
+        <meta property="og:site_name" content="Lapis Blog - About" />
+        <meta property="og:url" content="https://lapis.f5.si" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Lapis Blog" />
+        <meta property="og:locale" content="ja_JP" />
+        <meta property="og:description" content="Lapis Blogの情報等が載っています。" />
+        <meta name="robots" content="noindex,nofollow" />
+        <meta name="format-detection" content="email=no,telephone=no,address=no">
+        <!-- <meta property="fb:app_id" content="AppID"> -->
+    </head>
+    <body>
+        <header>
+            <div class="logo">Lapis Blog</div>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <nav class="nav-bar">
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="" class="active">About Us</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <script>
+            hamburger = document.querySelector(".hamburger");
+            hamburger.onclick = function() {
+                navBar = document.querySelector(".nav-bar");
+                navBar.classList.toggle("active");
+            }
+        </script>
+    </body>
+</html>
